@@ -9,7 +9,7 @@ docutils==0.14
 futures==3.1.1
 gunicorn==19.6.0
 jmespath==0.9.3
-nltk==3.2.4
+nltk==3.4.5
 psycopg2==2.6.2
 python-dateutil==2.6.1
 pytz==2017.2
