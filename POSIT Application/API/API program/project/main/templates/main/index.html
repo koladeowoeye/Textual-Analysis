@@ -1,0 +1,220 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Posit</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'waitMe.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div id="page">
+  <div id="listarea">
+    {% for file in uploaded_file_url %}
+        <h3> {{ file }} </h3>
+    {% endfor %}
+   </div>
+
+    <h3> {{ home }} </h3>
+    <br><hr><br>
+    <form  method="post" enctype='multipart/form-data' action="/get_file" id="positfrm">
+        {% csrf_token %}
+		<fieldset>
+            <input type="file" name="myfile" multiple webkitdirectory="true" directory = "true" />             
+            <label> You can upload Mutiple Files at once </label>
+        </fieldset>
+    </form>
+	<input type="button" value="Submit" onclick="submit('positfrm')"  />
+  
+       <br><br>
+       <div style="text-align: center">
+           <i  id="spin" class="fa fa-spinner" style="font-size:48px"></i>
+           <i id="finish" class="fa fa-check" aria-hidden="true" style="font-size:48px;color:green"></i>
+       </div>
+
+    {% if uploaded %} 
+    <form id="searchForm" method="post">
+
+        
+		<fieldset>
+
+<!--            <a href="/run_rename" >Rename Files</a> | 
+            <a href="/run_sentistrength" > Sentistrenght Analysis </a>| 
+            <a href="/run_wordfrequency" >  Word Frequency </a> | -->
+            <!-- <a href="/run_posit"  onclick="run_waitMe($('body'), 1, 'stretch', 'Please wait...')" > Run Posit </a> | --> 
+            <a  id="runposit" onclick="download_result()" href="#" > Run Posit </a> | 
+            <a href="/delete_all" >Delete All uploads </a>
+            <br>
+
+            <!-- <div id="searchInContainer"> -->
+            <!--     <input type="radio" name="check" value="site" id="searchSite" checked /> -->
+            <!--     <label for="searchSite" id="siteNameLabel">Search</label> -->
+                
+            <!--     <input type="radio" name="check" value="web" id="searchWeb" /> -->
+            <!--     <label for="searchWeb">Search The Web</label> -->
+			<!-- </div> -->
+                        
+            <!-- <ul class="icons"> -->
+            <!--     <li class="web" title="Web Search" data-searchType="web">Web</li> -->
+            <!--     <li class="images" title="Image Search" data-searchType="images">Images</li> -->
+            <!--     <li class="news" title="News Search" data-searchType="news">News</li> -->
+            <!--     <li class="videos" title="Video Search" data-searchType="video">Videos</li> -->
+            <!-- </ul> -->
+        </fieldset>
+    </form>
+    {% endif %}
+
+  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>   
+<script src="{% static 'script.js' %}"></script>
+<script type="text/javascript" src="{% static 'waitme.js' %}"></script>
+<script>
+   $("#spin").hide(); 
+   $("#finish").hide(); 
+
+function download_result(){
+ $("#spin").show();
+ $("#spin").addClass("fa-spin");
+    var url = 'posit-result.zip';
+    var filename = 'posit-result.zip';
+    var request = new XMLHttpRequest();
+    request.open('GET', "/run_posit", true);
+    request.responseType = 'blob';
+    request.onload = function() {
+       var link = document.createElement('a');
+       document.body.appendChild(link);
+       link.href = window.URL.createObjectURL(request.response);
+       link.download = filename;
+       $("#spin").removeClass("fa-spin");
+       $("#spin").hide();
+       $("#listarea").html("");
+       $("#finish").show(); 
+       link.click();
+    };
+    request.send();
+ return false;
+}
+
+</script>
+<script>
+
+function run_waitMe(el, num, effect, msg) {
+
+        text = 'Please wait...';
+
+        if (msg !== "") {
+
+            text = msg;
+
+        }
+
+        fontSize = '';
+
+        switch (num) {
+
+            case 1:
+
+                maxSize = '';
+
+                textPos = 'vertical';
+
+                break;
+
+            case 2:
+
+                text = '';
+
+                maxSize = 30;
+
+                textPos = 'vertical';
+
+                break;
+
+            case 3:
+
+                maxSize = 30;
+
+                textPos = 'horizontal';
+
+                fontSize = '18px';
+
+                break;
+
+        }
+        el.waitMe({
+
+            effect: effect,
+
+            text: text,
+
+            bg: 'rgba(255,255,255,0.7)',
+
+            color: '#000',
+
+            maxSize: maxSize,
+
+            source: 'img.svg',
+
+            textPos: textPos,
+
+            fontSize: fontSize,
+
+            onClose: function () { }
+
+        });
+
+    }
+    function submit(frm) {
+
+        run_waitMe($('body'), 1, 'stretch', 'Please wait...');
+        $('#' + frm).submit();
+
+    }
+
+
+
+</script>
+<!-- <script> -->    
+<!-- $(function() { -->
+<!--     // When we're using HTTPS, use WSS too. -->
+<!--     var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws"; -->
+<!--     var chatsock = new ReconnectingWebSocket(ws_scheme + '://' + window.location.host + "/chat" + window.location.pathname); -->
+    
+<!--     chatsock.onmessage = function(message) { -->
+<!--         var data = JSON.parse(message.data); -->
+<!--         var chat = $("#log_message") -->
+<!--         var ele = $('<tr></tr>') -->
+
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.timestamp) -->
+<!--         ) -->
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.handle) -->
+<!--         ) -->
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.message) -->
+<!--         ) -->
+        
+<!--         chat.append(ele) -->
+<!--     }; -->
+
+<!--     $("#senti").on("click", function(event) { -->
+<!--         var message = { -->
+<!--             handle: $('#handle').val(), -->
+<!--             message: "message from broswer", -->
+<!--         } -->
+<!--         chatsock.send(JSON.stringify(message)); -->
+<!--         $("#message").val('').focus(); -->
+<!--         return false; -->
+<!--     }); -->
+<!-- }); -->
+<!--     </script> -->
+</body>
+</html>
+

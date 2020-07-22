@@ -1,0 +1,109 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Posit</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
+
+</head>
+
+<body>
+
+<div id="page">
+    {% for file in uploaded_file_url %}
+    <h3> {{ file }} </h3>
+    {% endfor %}
+    <h3> {{ home }} </h3>
+    <br>
+    <hr>
+    <br>
+    <form  method="post" enctype='multipart/form-data' action="/get_file">
+        {% csrf_token %}
+		<fieldset>
+            <input type="file" name="myfile" multiple webkitdirectory="true" directory = "true" /> 
+            <input type="submit" value="Submit"  />
+            <label> You can upload Mutiple Files at once </label>
+        </fieldset>
+    </form>
+     <!-- <input id="handle" type="text" placeholder="handle"> -->
+     <!--        <textarea id="message"></textarea> -->
+    <!-- <div id="log_message" ></div> -->
+  
+    {% if uploaded %} 
+    <form id="searchForm" method="post">
+		<fieldset>
+           	<!-- <input id="s" type="text" /> -->
+
+<!--            <a href="/run_rename" >Rename Files</a> | 
+            <a href="/run_sentistrength" > Sentistrenght Analysis </a>| 
+            <a href="/run_wordfrequency" >  Word Frequency </a> | -->
+            <a href="/run_posit"> Run Posit </a> | 
+            <a href="/delete_all" >Delete All uploads </a>
+            <br>
+
+            <!-- <div id="searchInContainer"> -->
+            <!--     <input type="radio" name="check" value="site" id="searchSite" checked /> -->
+            <!--     <label for="searchSite" id="siteNameLabel">Search</label> -->
+                
+            <!--     <input type="radio" name="check" value="web" id="searchWeb" /> -->
+            <!--     <label for="searchWeb">Search The Web</label> -->
+			<!-- </div> -->
+                        
+            <!-- <ul class="icons"> -->
+            <!--     <li class="web" title="Web Search" data-searchType="web">Web</li> -->
+            <!--     <li class="images" title="Image Search" data-searchType="images">Images</li> -->
+            <!--     <li class="news" title="News Search" data-searchType="news">News</li> -->
+            <!--     <li class="videos" title="Video Search" data-searchType="video">Videos</li> -->
+            <!-- </ul> -->
+        </fieldset>
+    </form>
+    {% endif %}
+
+  
+</div>
+
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="{% static 'script.js' %}"></script>
+
+
+<!-- <script> -->    
+<!-- $(function() { -->
+<!--     // When we're using HTTPS, use WSS too. -->
+<!--     var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws"; -->
+<!--     var chatsock = new ReconnectingWebSocket(ws_scheme + '://' + window.location.host + "/chat" + window.location.pathname); -->
+    
+<!--     chatsock.onmessage = function(message) { -->
+<!--         var data = JSON.parse(message.data); -->
+<!--         var chat = $("#log_message") -->
+<!--         var ele = $('<tr></tr>') -->
+
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.timestamp) -->
+<!--         ) -->
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.handle) -->
+<!--         ) -->
+<!--         ele.append( -->
+<!--             $("<td></td>").text(data.message) -->
+<!--         ) -->
+        
+<!--         chat.append(ele) -->
+<!--     }; -->
+
+<!--     $("#senti").on("click", function(event) { -->
+<!--         var message = { -->
+<!--             handle: $('#handle').val(), -->
+<!--             message: "message from broswer", -->
+<!--         } -->
+<!--         chatsock.send(JSON.stringify(message)); -->
+<!--         $("#message").val('').focus(); -->
+<!--         return false; -->
+<!--     }); -->
+<!-- }); -->
+<!--     </script> -->
+</body>
+</html>
+

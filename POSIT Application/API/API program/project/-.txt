@@ -1,0 +1,226 @@
+ -------------- Error (2017-09-14 10:26:24.9120) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:35:23.6035) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:37:37.8438) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:37:50.6358) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:38:56.9983) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:41:07.6651) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:41:32.3610) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:47:47.8732) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:57:26.3605) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:57:55.7977) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:57:59.1985) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:58:30.5546) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 10:59:05.0472) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 11:02:55.3368) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 11:04:05.7252) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 11:04:08.1120) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.ArgumentNullException
+ Exception Message: Value cannot be null.
+Parameter name: source
+ Stack Trace:    at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 12:04:50.2822) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
+ -------------- Error (2017-09-14 12:05:41.3275) --------------
+ 
+ Call Site: GRP.WebUI.Controllers.UserController+<saveBranchUser>d__23.MoveNext
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at GRP.WebUI.Controllers.UserController.<saveBranchUser>d__23.MoveNext()
+
